@@ -1,0 +1,34 @@
+Algorithm to check if a 150gr package is wrong
+
+START
+
+Packages = 30
+
+WHILE(Packages > 0){
+
+	READ Weight
+
+	IF(Weight > 160){
+
+		PRINT("Failed packages")		
+	
+	}
+
+	ELSE IF(Weight < 140){
+
+		PRINT("Failed packages")	
+
+	}
+
+	ELSE{
+
+		PRINT("Packages not failed")	
+
+	}
+
+
+	Packages--
+}
+
+
+END

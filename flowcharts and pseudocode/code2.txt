@@ -1,0 +1,30 @@
+
+
+INICIO
+	Escribir "¿Cuántos escalones quieres que tenga tu escalera?"
+	Leer altura
+	for(escalones = 1; escalones == altura; escalones++) {
+		Escribir " " * (altura - escalones) + "#" * escalones
+	}
+FIN
+
+
+
+INICIO
+	ganancias = 0
+	While (ganancias < 2000) {
+		consumo = 0
+		Escribir "¿Quieres Hot-Dog o Hamburguesa?"
+		Leer producto
+		Escribir "¿Cuántos?"
+		Leer cantidad
+
+		if (producto == "Hot-Dog") {
+			consumo = 15 * cantidad
+		}
+		elif (producto == "Hamburguesa") {
+			consumo = 20 * cantidad
+		}
+		ganancias = ganancias + consumo
+	}
+FIN
