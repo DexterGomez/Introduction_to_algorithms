@@ -1,0 +1,34 @@
+INICIO
+	dias = 0
+	horas = 0
+	minutos = 0
+
+	Escribir "Introduzca los segundos que quiere convertir"
+	Leer segundos
+
+	if (segundos >= 86400) {
+		dias = segundos / 86400
+		segundos = seonds % 86400
+	}
+	elif (segundos >= 3600) {
+		horas = segundos / 3600
+		segundos = segundos % 3600
+	}
+	elif (segundos >= 60) {
+		minutos = segundos / 60
+		segundos = segundos % 60
+	}
+
+	Escribir dias, " dias ", horas, " horas ", minutos, " minutos ", segundos " segundos"
+FIN
+
+-----------------------------------------------------------
+
+INICIO
+	Escribir "¿Cuántos escalones quieres que tenga tu escalera?"
+	Leer altura
+	for(escalones = 1; escalones == altura; escalones++) {
+		Escribir " " * (altura - escalones) + "#" * escalones
+	}
+FIN
+
